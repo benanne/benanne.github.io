@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /about/
-title: About me
-tags: [about]
+permalink: /research/
+title: Research
+tags: [research]
 image:
   feature: 12.jpg
   <!--  credit: dargadgetz
@@ -10,11 +10,23 @@ image:
 <!-- share: true -->
 ---
 
-My name is Sander Dieleman. I'm a PhD student in the [Reservoir Lab](http://reslab.elis.ugent.be/) at [Ghent University](http://www.ugent.be/) in Belgium.
+My main research interest is learning hierarchical representations of musical audio signals: finding ways to represent music audio to facilitate classification and recommendation by learning from data.
 
-My research is on learning hierarchical representations of musical audio signals for classification and recommendation, with a focus on *[deep learning](http://en.wikipedia.org/wiki/Deep_learning)* and *feature learning*. More information can be found on the [Research](/research) page.
+<!-- TODO: add an image from a paper  (spectrograms? k-means features?) -->
 
-In my spare time, I maintain [got-djent.com](http://got-djent.com/), a non-profit community portal website for fans of *[djent](http://en.wikipedia.org/wiki/Djent)*, an emerging trend in progressive metal music.
+For this, I make use of feature learning and *[deep learning](http://en.wikipedia.org/wiki/Deep_learning)* techniques. I also use collaborative filtering techniques for music recommendation.
+
+A few selected papers are listed below, please refer to Google Scholar for [an overview of my publications](http://scholar.google.be/citations?user=2ZU62T4AAAAJ).
+
+## End-to-end learning for music audio
+<!-- TODO - include an image as well (float left?) -->
+
+## Deep content-based music recommendation
+<!-- TODO - include an image as well (float left?) -->
+
+## Multiscale approaches to music audio feature learning
+<!-- TODO - include an image as well (float left?) -->
+
 
 <!-- 
 ## What HPSTR brings to the table:
