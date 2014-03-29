@@ -3,10 +3,6 @@
     * kaggle-whales
     * ...
 
-* write first post
-
-* extend about page
-
 * test disqus
 
 * test share buttons
@@ -32,15 +28,5 @@ post ideas
 
     Friends don't let friends pretrain neural nets!
 
-
-* How to use cuda-convnet convolutions from pylearn2 in Theano
-    - why not just use cuda-convnet? Because C++ is tedious, Theano has many advantages (lets you express models mathematically, lots of flexibility, rapid prototyping)
-    - why not just use pylearn2? although it is aimed at researchers, it has a steep learning curve + theano offers complete flexibility (of course the flip side of the coin is that you need to write more stuff yourself)
-    - poorly documented, so this post tries to piece things together
-    - not a drop-in replacement for theano.tensor.nnet.conv2d / max_pool_2d
-        * some limitations: square pooling regions, square filters, multiples of 16 here and there
-        * some advantages: strided pooling, A LOT FASTER (speedups 2x, 3x on GTX 680 for which it was not optimised)
-        * need to tune performance/memory usage with partial_sum (although 1 and None are probably the only settings you need)
-    - flexibility of Theano + speed of cuda-convnet is a very powerful combination (cfr. Galaxy Zoo)
 
 * describe the galaxy zoo network

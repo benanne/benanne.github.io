@@ -1,5 +1,5 @@
 title:            Sander Dieleman
-description:      Where does this description end up?
+description:      "Machine learning, deep learning, music information retrieval, recommender systems"
 disqus_shortname: benanne
 # Your site's domain goes here. When working locally use localhost server leave blank
 # PS. If you set this wrong stylesheets and scripts won't load and most links will break.
@@ -10,7 +10,7 @@ url:              http://localhost:4000
 owner:
   name:           Sander Dieleman
   avatar:         avatar.jpg
-  bio:            "PhD Student at Ghent University"
+  bio:            # "No bio" # PhD Student at Ghent University"
   email:          sanderdieleman@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
@@ -23,6 +23,7 @@ owner:
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/u/0/+SanderDieleman
+  kaggle:         http://www.kaggle.com/users/41181/sedielem
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-49337047-1
@@ -35,8 +36,19 @@ bing_verify:
 links:
   - title: Research
     url: /research
+  - title: Software
+    url: /software
   - title: ResLab
     url: http://reslab.elis.ugent.be
+    external: true
+  - title: MetaOptimize
+    url: http://metaoptimize.com/qa
+    external: true
+  - title: r/machinelearning
+    url: http://www.reddit.com/r/machinelearning
+    external: true
+  - title: Deep Learning G+
+    url: https://plus.google.com/communities/112866381580457264725
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
