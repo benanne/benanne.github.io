@@ -10,11 +10,13 @@ image:
 <!-- share: true -->
 ---
 
-My name is Sander Dieleman. I'm a PhD student in the [Reservoir Lab](http://reslab.elis.ugent.be/) at [Ghent University](http://www.ugent.be/) in Belgium.
+My name is Sander Dieleman. I'm a PhD student in the [Reservoir Lab](http://reslab.elis.ugent.be/) at [Ghent University](http://www.ugent.be/) in Belgium. On this blog, I mostly write about machine learning, deep learning, music information retrieval (MIR) and recommender systems.
 
 My research is on learning hierarchical representations of musical audio signals for classification and recommendation, with a focus on *[deep learning](http://en.wikipedia.org/wiki/Deep_learning)* and *feature learning*. More information can be found on the [Research](/research) page.
 
 In my spare time, I maintain [got-djent.com](http://got-djent.com/), a non-profit community portal website for fans of *[djent](http://en.wikipedia.org/wiki/Djent)*, an emerging trend in progressive metal music.
+
+
 
 <!-- 
 ## What HPSTR brings to the table:
