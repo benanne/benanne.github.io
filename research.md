@@ -16,7 +16,7 @@ My main research interest is learning hierarchical representations of musical au
 
 For this, I make use of feature learning and *[deep learning](http://en.wikipedia.org/wiki/Deep_learning)* techniques. I also use collaborative filtering techniques for music recommendation. A few selected papers are listed below, please refer to Google Scholar for [an overview of my publications](http://scholar.google.be/citations?user=2ZU62T4AAAAJ).
 
-### End-to-end learning for music audio (ICASSP 2014)
+### End-to-end learning for music audio (ICASSP 2014, to appear)
 
 Sander Dieleman, Benjamin Schrauwen
 
@@ -24,6 +24,8 @@ Content-based music information retrieval tasks have traditionally been solved u
 effort and the need for prior knowledge. However, this new approach typically still relies on mid-level representations of music audio, e.g. spectrograms, instead of raw audio signals. In this paper, we investigate whether it is possible to train convolutional neural networks directly on raw audio signals. The networks are able to autonomously discover frequency decompositions from raw audio, as well as phase- and translation-invariant feature representations.
 
 [**Paper (PDF)**](https://dl.dropboxusercontent.com/u/19706734/paper_pt.pdf)
+
+[copyright 2014 by IEEE](/ieee_copyright/)
 
 <figure class='half'>
     <a href="/images/sorted_features_cropped.png"><img src="/images/sorted_features_cropped.png" alt="Normalised magnitude spectra of the filters learned in the lowest layer of a convolutional neural network that processes raw audio signals, ordered according to the dominant frequency (from low to high)."></a>

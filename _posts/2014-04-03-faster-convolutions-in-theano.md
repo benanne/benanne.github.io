@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using the faster convolutions from cuda-convnet in Theano
+title: 3x faster convolutions in Theano
 description: "TODO"
 <!-- modified: 2014-03-29 -->
 
@@ -319,22 +319,31 @@ def evaluate_lenet5(learning_rate=0.1, n_epochs=200,
                     nkerns=[32, 64], batch_size=500):
 {% endhighlight %}
 
-Now it should work. <!-- TODO: download the modified file here. (add link) -->
+Now it should work. You can download the modified file here (place it in the same directory):
 
-Running the unmodified code with 32 and 64 filters respectively takes ... on the GeForce GT 540M in my laptop:
+* [convolutional_mlp_cc.py](/files/convolutional_mlp_cc.py)
 
-<!-- insert output -->
-
-With `FilterActs` and `MaxPool` instead of the Theano implementation, it only takes 131 minutes. A ...x speedup!
+Running the unmodified code for **50 epochs** with **32 and 64 filters** respectively takes **110 minutes** on the GeForce GT 540M in my laptop:
 
 {% highlight python %}
 Optimization complete.
-Best validation score of 1.000000 % obtained at iteration 15500,
-with test performance 0.910000 %
-The code for file convolutional_mlp_cc.py ran for 130.74m
+Best validation score of 1.120000 % obtained at iteration 5000,
+with test performance 1.000000 %
+The code for file convolutional_mlp.py ran for 109.47m
 {% endhighlight %}
 
-On a workstation with a GeForce GTX 680:
+With `FilterActs` and `MaxPool` instead of the Theano implementation, it only takes **34 minutes**:
+
+{% highlight python %}
+Optimization complete.
+Best validation score of 1.120000 % obtained at iteration 5000,
+with test performance 0.940000 %
+The code for file convolutional_mlp_cc.py ran for 33.76m
+{% endhighlight %}
+
+**A 3.2x speedup!**
+
+On a workstation with a GeForce GTX 680, the unmodified code takes **13.15 minutes** for 50 epochs. Using `FilterActs`, it takes **4.75 minutes**, which amounts to a **2.7x speedup**.
 
 <!-- insert output -->
 

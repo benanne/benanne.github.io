@@ -28,5 +28,6 @@ post ideas
 
     Friends don't let friends pretrain neural nets!
 
+* Random search for hyperparameter optimization vs. grid search, hyperopt, spearmint
 
 * describe the galaxy zoo network
