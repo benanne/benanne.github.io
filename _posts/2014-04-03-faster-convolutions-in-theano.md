@@ -21,6 +21,8 @@ share: true
 
 [Convolutional neural networks (convnets)](http://en.wikipedia.org/wiki/Convolutional_neural_network) are all the rage right now. Training a convnet on any reasonably sized dataset is very computationally intensive, so GPU acceleration is indispensible. In this post I'll show how you can use the blazing fast convolution implementation from Alex Krizhevsky's [cuda-convnet](http://code.google.com/p/cuda-convnet/) in [Theano](http://www.deeplearning.net/software/theano/).
 
+As an example, I'll also show how the [LeNet deep learning tutorial on convolutional neural networks](http://deeplearning.net/tutorial/lenet.html) can be modified to use this convolution implementation instead of Theano's own, resulting in a 3x speedup.
+
 
 ## Introduction
 
