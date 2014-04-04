@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3x faster convolutions in Theano
-description: "TODO"
+description: "How to use the cuda-convnet convolution implementation from Theano"
 <!-- modified: 2014-03-29 -->
 
 tags: [deep learning, convolutional neural networks, convnets, Theano]
