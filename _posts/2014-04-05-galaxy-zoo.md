@@ -218,7 +218,7 @@ The averaged predictions for each model were then uniformly blended again, acros
 
 My final submission was a blend of predictions from 17 different models, each of which were themselves blended across 60 transformations of the input. So in the end, I blended 1020 predictions for each test set image.
 
-For comparison: my **best single model** achieved a score of **0.07671** on the public leaderboard. After averaging, I achieved a **final score of 0.7467**.
+For comparison: my **best single model** achieved a score of **0.07671** on the public leaderboard. After averaging, I achieved a **final score of 0.7467**. This resulted in a score of **0.07492** on the private leaderboard.
 
 ## Miscellany
 
