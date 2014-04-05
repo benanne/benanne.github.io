@@ -12,9 +12,7 @@ comments: true
 share: true
 ---
 
-The [Galaxy Zoo challenge](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge) on Kaggle has just finished. The goal of the competition was to predict how Galaxy Zoo users (*zooites*) would classify images of galaxies from the [Sloan Digital Sky Survey](http://www.sdss.org/). In this post, I'm going to explain how my solution works.
-
-<!-- I will focus on what I used for my final submissions, and occasionally I'll mention some other things that I tried, but I will leave out some stuff for brevity's sake. -->
+The [Galaxy Zoo challenge](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge) on Kaggle has just finished. The goal of the competition was to predict how Galaxy Zoo users (*zooites*) would classify images of galaxies from the [Sloan Digital Sky Survey](http://www.sdss.org/). I finished in 1st place and in this post I'm going to explain how my solution works.
 
 ## Introduction
 
