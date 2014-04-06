@@ -243,3 +243,10 @@ If this problem interests you, be sure to check out [the competition forum](http
 I would like to thank the organisers of the competition, as well as the authors of Theano, cuda-convnet and pylearn2 for providing me with the necessary tools.
 
 I will clean up my code and I'll put it on GitHub soon. If you have any questions or feedback about this post, feel free to leave a comment.
+
+
+#### Update (April 6th):
+
+* [Post on r/machinelearning](http://www.reddit.com/r/MachineLearning/comments/22a77q/kaggle_galaxy_zoo_challenge_winner_shares/)
+* [Post on Deep Learning Google+](https://plus.google.com/+DanielNouri/posts/hnjHnCN7AxQ)
+* [Post on Hacker News](https://news.ycombinator.com/item?id=7539219)
