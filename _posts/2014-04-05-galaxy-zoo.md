@@ -82,7 +82,7 @@ Each training example was perturbed before presenting it to the network by rando
 * **zoom**: random with scale factor between 1/1.3 and 1.3 (log-uniform)
 * **flip**: yes or no (bernoulli)
 
-Because both the initial downsampling to 69x69 and the random perturbation are affine transforms, they could be **combined into one affine transformation step** (I used scikit-learn for this). This sped up things significantly and reduced information loss.
+Because both the initial downsampling to 69x69 and the random perturbation are affine transforms, they could be **combined into one affine transformation step** (I used scikit-image for this). This sped up things significantly and reduced information loss.
 
 ### Colour perturbation
 
