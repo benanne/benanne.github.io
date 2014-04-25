@@ -10,6 +10,14 @@ image:
 <!-- share: true -->
 ---
 
+## Kaggle galaxy challenge solution
+
+I won the [galaxy challenge on Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge), which was organised by [Galaxy Zoo](http://www.galaxyzoo.org/). The goal was to predict how the crowd would classify images of galaxies, based on their morphology.
+
+I used convolutional neural networks and incorporated the rotation invariance of the images into the network architecture. I also used lots of data augmentation.
+
+[Code on GitHub](https://github.com/benanne/kaggle-galaxies)
+
 ## Morb
 
 Morb is a toolbox for building and training Restricted Boltzmann Machine (RBM) models in [Theano](http://deeplearning.net/software/theano/). It is intended to be modular, so that a variety of different models can be built from their elementary parts. A second goal is for it to be extensible, so that new algorithms and techniques can be plugged in easily.
@@ -49,62 +57,3 @@ Hyperparameters for all these steps were optimised in a big random search. At th
 The processing pipeline is in the file [pipeline_job.py](https://github.com/benanne/kaggle-whales/blob/master/pipeline_job.py). My implementation of spherical K-means is in [kmeans.py](https://github.com/benanne/kaggle-whales/blob/master/kmeans.py).
 
 [Code on GitHub](https://github.com/benanne/kaggle-whales)
-
-<!-- 
-
-My main research interest is learning hierarchical representations of musical audio signals: finding ways to represent music audio to facilitate classification and recommendation by learning from data.
-
-
-For this, I make use of feature learning and *[deep learning](http://en.wikipedia.org/wiki/Deep_learning)* techniques. I also use collaborative filtering techniques for music recommendation. A few selected papers are listed below, please refer to Google Scholar for [an overview of my publications](http://scholar.google.be/citations?user=2ZU62T4AAAAJ).
-
-### End-to-end learning for music audio (ICASSP 2014, to appear)
-
-Sander Dieleman, Benjamin Schrauwen
-
-Content-based music information retrieval tasks have traditionally been solved using engineered features and shallow processing architectures. In recent years, there has been increasing interest in using feature learning and deep architectures instead, thus reducing the required engineering
-effort and the need for prior knowledge. However, this new approach typically still relies on mid-level representations of music audio, e.g. spectrograms, instead of raw audio signals. In this paper, we investigate whether it is possible to train convolutional neural networks directly on raw audio signals. The networks are able to autonomously discover frequency decompositions from raw audio, as well as phase- and translation-invariant feature representations.
-
-[**Paper (PDF)**](https://dl.dropboxusercontent.com/u/19706734/paper_pt.pdf)
-
-[copyright 2014 by IEEE](/ieee_copyright/)
-
-<figure class='half'>
-    <a href="/images/sorted_features_cropped.png"><img src="/images/sorted_features_cropped.png" alt="Normalised magnitude spectra of the filters learned in the lowest layer of a convolutional neural network that processes raw audio signals, ordered according to the dominant frequency (from low to high)."></a>
-    <a href="/images/some_invariance_filters_cropped.png"><img src="/images/some_invariance_filters_cropped.png" alt="A subset of filters learned in a convolutional neural network with a feature pooling layer (L2 pooling with pools of 4 filters)."></a>
-    <figcaption><strong>Left:</strong> normalised magnitude spectra of the filters learned in the lowest layer of a convolutional neural network that processes raw audio signals, ordered according to the dominant frequency (from low to high). <strong>Right:</strong> a subset of filters learned in a convolutional neural network with a feature pooling layer (L2 pooling with pools of 4 filters). Each row represents a filter group. The filters were low-pass filtered to remove noise and make the dominant frequencies stand out.</figcaption>
-</figure>
-
-
-
-### Deep content-based music recommendation (NIPS 2013)
-
-Aäron van den Oord, Sander Dieleman, Benjamin Schrauwen
-
-The collaborative filtering approach to music recommendation suffers from the cold start problem: it fails when no listening data is available, so it is not effective for recommending new and unpopular songs. In this paper, we use a latent factor model for recommendation, and predict the latent factors from music audio when they cannot be obtained from listening data, using a deep convolutional neural network. Predicted latent factors produce sensible recommendations, despite the fact that there is a large semantic gap between the characteristics of a song that affect user preference and the corresponding audio signal.
-
-[**Paper (PDF)**](http://papers.nips.cc/paper/5004-deep-content-based-music-recommendation.pdf) - [**BibTeX**](http://papers.nips.cc/paper/5004-deep-content-based-music-recommendation/bibtex) - [**Abstract**](http://papers.nips.cc/paper/5004-deep-content-based-music-recommendation)
-
-<figure>
-    <a href="/images/prentje_nips.png"><img src="/images/prentje_nips.png" alt="t-SNE visualisation of user listening patterns predicted from audio."></a>
-    <figcaption>t-SNE visualisation of user listening patterns predicted from audio. A few close-ups show artists whose songs are projected in specific areas.</figcaption>
-</figure>
-
-
-
-### Multiscale approaches to music audio feature learning (ISMIR 2013)
-
-Sander Dieleman, Benjamin Schrauwen
-
-Recent results in feature learning indicate that simple algorithms such as K-means can be very effective, sometimes surpassing more complicated approaches based on restricted Boltzmann machines, autoencoders or sparse coding. Furthermore, there has been increased interest in multiscale representations of music audio recently. Such representations are more versatile because music audio exhibits structure on multiple timescales, which are relevant for different MIR tasks to varying degrees. We develop and compare three approaches to multiscale audio feature learning using the spherical K-means algorithm.
-
-[**Paper (PDF)**](http://www.ppgia.pucpr.br/ismir2013/wp-content/uploads/2013/09/69_Paper.pdf) - [**BibTeX**](http://dc.ofai.at/browser?b=1250)
-
-<figure class='third'>
-    <a href="/images/multires_cropped.png"><img src="/images/multires_cropped.png" alt="Multiresolution spectrograms"></a>
-    <a href="/images/pyramid_gaussian_cropped.png"><img src="/images/pyramid_gaussian_cropped.png" alt="Gaussian pyramid"></a>
-    <a href="/images/pyramid_laplacian_cropped.png"><img src="/images/pyramid_laplacian_cropped.png" alt="Laplacian pyramid"></a>
-
-    <figcaption>Three multiscale time-frequency representations of audio signals. From left to right: multiresolution spectrograms, Gaussian pyramid, Laplacian pyramid.</figcaption>
-</figure>
-
- -->
