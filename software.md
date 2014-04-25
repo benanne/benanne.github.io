@@ -14,7 +14,7 @@ image:
 
 I won the [galaxy challenge on Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge), which was organised by [Galaxy Zoo](http://www.galaxyzoo.org/). The goal was to predict how the crowd would classify images of galaxies, based on their morphology.
 
-I used convolutional neural networks and incorporated the rotation invariance of the images into the network architecture. I also used lots of data augmentation.
+I used convolutional neural networks and incorporated the rotation invariance of the images into the network architecture. I also used lots of data augmentation. More information about my approach can be found [in this blogpost](http://benanne.github.io/2014/04/05/galaxy-zoo.html). Documentation is also available in the GitHub repository.
 
 [Code on GitHub](https://github.com/benanne/kaggle-galaxies)
 
