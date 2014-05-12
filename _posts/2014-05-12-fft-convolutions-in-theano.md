@@ -89,6 +89,6 @@ Note that the latest revision of scikits.cuda is required, to ensure that the `c
 
 If you're patient, you can also wait until the code is available in Theano. Chances are you'll be able to use it without modifying your existing code, as they are also building an optimization that will replace Theano's own convolutions with the FFT-based implementation. And if you're very patient, you can wait until they build the CUDA/C version, which will eliminate the scikits.cuda and PyCUDA dependencies, and hopefully it will be a bit faster as well due to the reduced overhead.
 
-The code to compute the numbers in the table above is in the file [`speedtest.py`](https://github.com/benanne/theano_fftconv/blob/master/speedtest.py). More numbers for different input/filter shapes and different GPUs are welcome, so if you run this script on your own machine(s), feel free to send me the results.
+The code to compute the numbers in the table above is in the file [`speedtest.py`](https://github.com/benanne/theano_fftconv/blob/master/speedtest.py). This script also checks whether the output of all three implementations is the same (up to a given tolerance). More numbers for different input/filter shapes and different GPUs are welcome, so if you run this script on your own machine(s), feel free to send me the results.
 
 Feedback is welcome, and if you'd like to help with integrating this into Theano, [join the conversation at the theano-users group](https://groups.google.com/forum/#!topic/theano-users/6xiFFpBBDq0)!
