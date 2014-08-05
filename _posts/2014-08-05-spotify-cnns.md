@@ -323,8 +323,9 @@ Spotify is a really cool place to work at. They are very open about their method
 
 If you have any questions or feedback about this post, feel free to leave a comment!
 
-<!-- * Post on [Hacker News]()
-* Post on [r/machinelearning]()
+* Post on [Hacker News](https://news.ycombinator.com/item?id=8137264)
+* Post on [r/machinelearning](http://www.reddit.com/r/MachineLearning/comments/2cozew/recommending_music_on_spotify_with_deep_learning/)
+<!--
 * Post on the [Google+ deep learning community]()
 * Post on the [Google+ music information retrieval community]() -->
 
