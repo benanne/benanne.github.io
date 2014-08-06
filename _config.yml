@@ -4,7 +4,7 @@ disqus_shortname: benanne
 # Your site's domain goes here. When working locally use localhost server leave blank
 # PS. If you set this wrong stylesheets and scripts won't load and most links will break.
 # PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
-url:              http://benanne.github.io
+url:              https://benanne.github.io
 
 # Owner/author information
 owner:
