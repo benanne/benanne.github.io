@@ -186,8 +186,23 @@ I call this the "swapping trick" because it often leads to the first two algorit
 
 ## Implementation
 
-(just a note on how Theano compiles graphs and where the meta-optimizer kicks
-in)
+To understand why Theano was a perfect fit to add automatic algorithm selection, we will need to explain a bit of its inner workings.
+
+First, Theano is not a neural network library, but a mathematical expression compiler.
+In contrast to, say, Caffe, its basic components are not neural network layers, but mathematical operations.
+Implementing a neural network is done by composing the expression for the forward pass (which will probably include matrix multiplications, vector additions, elementwise nonlinearities and possibly batched convolution and pooling), using this to build an expression for the training cost, and then letting Theano transform it into expressions for the gradients wrt. the parameters to be learned.
+Finally, the expressions are compiled into functions that evaluate them for specific settings of the free variables (such as a mini-batch of training data).
+
+But right before an expression is compiled, it is *optimized*, and this is where all the magic happens.
+The expression is represented as a graph of Apply nodes (operations) and Variable nodes (the inputs and outputs of an operation), and Theano comes with a bunch of *graph optimizers* that modify the graph to produce the same result either more efficiently or more numerically stable.
+<br/>
+One particular graph optimizer moves convolution operations from the CPU to the GPU by replacing the respective Apply node and adding the necessary transfer operations around it.
+A whole set of graph optimizers then replaces the generic GPU convolution operation with one of the more efficient implementations available in Theano. These optimizers have relative priorities and can be enabled and disabled by the user.
+
+The new meta-optimizer is just another graph optimizer with a twist: When it encounters a convolution operation, it applies each of the set of available graph optimizers (plus the cuDNN "swapping trick" optimizer) in sequence, each time compiling and executing the subgraph performing the convolution, and chooses the one resulting in the best performance.
+(Finally, this explains why it's called *meta*-optimization.)
+<br/>
+As the basic components in Theano are the mathematical operations, there is no extra work needed to be able to choose different implementations for the three convolutions per layer: All Theano sees when optimizing and compiling an expression is a graph containing several anonymous convolution operations, so it will naturally optimize each of them separately.
 
 
 ## Practical gains
