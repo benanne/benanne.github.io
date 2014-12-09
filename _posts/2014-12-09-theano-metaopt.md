@@ -254,4 +254,14 @@ To get an estimate on how much Theano could help for your use case, just run [th
 
 ## Future
 
-(all the TODOs that are missing)
+While the basic machinery is in place and works fine, there are a lot of conceivable improvements:
+
+* The meta-optimizer should cache its results on disk to speed up repeated compilations of the same graph.
+* Right now, the meta-optimizer uses all available convolution operations in Theano; it should be possible to control this.
+* As cuda-convnet is not included in Theano, but an external project (Pylearn2), it is not included in the meta-optimizer. However, it is possible to register additional optimizers at runtime via `theano.sandbox.cuda.opt.conv_metaopt.register()`. It would be nice to write such a pluggable optimizer for cuda-convnet.
+* Similarly, it would be nice to have a wrapper for cuda-convnet2 (in a separate repository) along with an optimizer to be registered with the meta-optimizer.
+* Currently, meta-optimization can only be used for non-strided valid or full convolutions, because this is what the legacy implementation is limited to. Changing this would require [some refactoring](https://github.com/Theano/Theano/issues/2268#issuecomment-63621626), but lead to cleaner code and slightly improved performance.
+* Finally, it could be worthwhile to repeat the same for the pooling operation of CNNs: Port additional implementations to Theano, benchmark them and add a meta-optimizer.
+
+Watch [Issue #2072](https://github.com/Theano/Theano/issues/2072) on github for any progress on this, or even better, step in and implement one of these features if you can use it!
+Both that issue and [theano-dev](https://groups.google.com/forum/#!forum/theano-dev) are well-suited to ask for hints about implementing any of these TODOs -- we'd be glad to have you on board.
