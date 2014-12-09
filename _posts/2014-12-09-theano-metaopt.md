@@ -2,7 +2,7 @@
 layout: post
 title: Meta-optimization for fastest convolutions in Theano
 description: "Meta-optimization for fastest convolutions in Theano"
-<!-- modified: 2014-12-02 -->
+<!-- modified: 2014-12-09 -->
 
 tags: [deep learning, convolutional neural networks, convnets, Theano, convolution, optimization]
 
@@ -207,7 +207,49 @@ As the basic components in Theano are the mathematical operations, there is no e
 
 ## Practical gains
 
-(benchmark a full network)
+Let us now put the meta-optimizer to test using the benchmark script mentioned in the cherry-picking section:
+
+~~~
+$ THEANO_FLAGS=metaopt.verbose=1 SKIP=legacy,gemm,fft,convnet,dnn python pylearn2_benchmark.py i128x36x12,k64x6x3,b256
+Using gpu device 0: GeForce GTX 780 Ti
+
+CONFIG: input = 128 x 36 x 12 * ker = 128 x 64 x 6 x 3 ( bs = 256 , stride = 1 )
+ConvMetaOptimizer meta-optimizing GpuConv{valid, (1, 1), None, (3, 6), True, (128, 12, 36), (3, 6)}(GpuFromHost.0, GpuFromHost.0) (5 choices):
+* local_conv_fft_full: not applicable
+* local_conv_fft_valid: 0.012958 sec
+* local_conv_dnn: 0.021169 sec
+* local_conv_gemm: 0.03973 sec
+* local_conv_dnn_alternative: 0.044379 sec
+= local_conv_fft_valid
+(experimental) meta-optimizer                      ==> fprop         ==>      12
+ConvMetaOptimizer meta-optimizing GpuConv{full, (1, 1), None, (3, 6), True, (64, 10, 31), (3, 6)}(GpuFromHost.0, GpuFromHost.0) (5 choices):
+* local_conv_fft_full: 0.019099 sec
+* local_conv_fft_valid: not applicable
+* local_conv_dnn: 0.032979 sec
+* local_conv_gemm: 0.028478 sec
+* local_conv_dnn_alternative: 0.015099 sec
+= local_conv_dnn_alternative
+(experimental) meta-optimizer                      ==> bprop inputs  ==>      15
+ConvMetaOptimizer meta-optimizing GpuConv{valid, (1, 1), None, (10, 31), False, (256, 12, 36), (10, 31)}(GpuFromHost.0, GpuFromHost.0) (5 choices):
+* local_conv_fft_full: not applicable
+* local_conv_fft_valid: 0.011441 sec
+* local_conv_dnn: 0.030338 sec
+* local_conv_gemm: 0.025984 sec
+* local_conv_dnn_alternative: 0.031552 sec
+= local_conv_fft_valid
+(experimental) meta-optimizer                      ==> bprop weights ==>      12
+~~~
+
+In verbose mode, the meta-optimizer reports which implementations are tested, how each of them performs and which one is finally chosen.
+For the configuration at hands, it turns out that the FFT-based implementation is fastest for the forward pass and the gradient wrt. weights, and cuDNN is fastest for the gradient wrt. inputs -- but only when using the "wrong" algorithm for it (namely, cuDNN's forward pass algorithm with zero padding, tried according to the swapping trick).
+In all three instances, the optimal algorithm is about twice as fast as just choosing cuDNN (Theano's current default behavior).
+
+When training a full network, the impact will generally be smaller, because the convolution operations only constitute a part of the expressions evaluated (but often the most costly part).
+The improvement also heavily depends on the input and kernel shapes -- for a wide range of configurations, just using cuDNN for all convolutions is nearly optimal.
+Still, a colleague of Sander reported a threefold performance improvement for a network trained for a Kaggle compitition, with the meta-optimizer combining FFT, Caffe, and cuDNN with and without the swapping trick.
+<!-- For the curious: the configurations were `i1x104x104,k128x9x9,b8` and `i128x96x96,k16x1x1,b8`. -->
+
+To get an estimate on how much Theano could help for your use case, just run [the benchmark script](https://github.com/soumith/convnet-benchmarks/tree/master/theano) for the configurations occurring in a forward pass through your network.
 
 
 ## Future
