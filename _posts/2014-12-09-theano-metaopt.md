@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Meta-optimization for fastest convolutions in Theano
-description: "Meta-optimization for fastest convolutions in Theano"
+title: The fastest convolutions in Theano with meta-optimization
+description: "The fastest convolutions in Theano with meta-optimization"
 <!-- modified: 2014-12-09 -->
 
 tags: [deep learning, convolutional neural networks, convnets, Theano, convolution, optimization]
@@ -15,7 +15,7 @@ comments: true
 share: true
 ---
 
-<p style='background-color: #ffa'>
+<p style='background-color: #ffa; padding: 1.2em;'>
 <em>Guest post:</em> <a href="http://ofai.at/~jan.schlueter">Jan Schlüter from the OFAI</a>, a fellow MIR researcher I have met at several conferences, recently added a feature to Theano that fits so well with my <a href="//benanne.github.io/2014/04/03/faster-convolutions-in-theano.html">previous</a> <a href="//benanne.github.io/2014/05/12/fft-convolutions-in-theano.html">two</a> posts on fast convolutions that we decided to include his writeup on my blog. So enjoy the third part of the series, written by Jan!
 </p>
 
