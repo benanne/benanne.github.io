@@ -10,13 +10,28 @@ image:
 <!-- share: true -->
 ---
 
+## Lasagne
+
+Lasagne is a lightweight library to build and train neural networks in Theano. Pragmatism and transparency are two of its main design goals, and it is built with a strong focus on feed-forward neural networks. It's supposed to help you build networks *with* Theano, not on top of it, so it doesn't hide Theano behind abstractions.
+
+Lasagne grew out of my internship at Spotify and my code for the Galaxy Challenge on Kaggle (see below as well). The core development team consists of [Daniel Nouri](http://danielnouri.org/), [Jan Schlüter](http://www.ofai.at/~jan.schlueter/), [Colin Raffel](http://colinraffel.com/), [Aäron van den Oord](https://twitter.com/avdnoord) and myself. It is very much a work in progress. For now tests and documentation are scarce, but we're working on it. Input is very welcome!
+
+* [Code on GitHub](https://github.com/benanne/lasagne)
+
+## Weighted matrix factorization
+
+I recently spent some time implementing the weighted matrix factorization (WMF) algorithm by Hu, Koren and Volinsky (*Collaborative filtering for implicit feedback datasets*, ICDM 2008) both with numpy/scipy and with Theano. The Theano version ended up being hard to optimize, in most cases the numpy/scipy version is actually faster. Both implementations were not thoroughly tested and are not guaranteed to be correct. Use them at your own risk!
+
+* [wmf on GitHub](https://github.com/benanne/wmf)
+* [theano_wmf on GitHub](https://github.com/benanne/theano_wmf)
+
 ## Kaggle galaxy challenge solution
 
 I won the [galaxy challenge on Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge), which was organised by [Galaxy Zoo](http://www.galaxyzoo.org/). The goal was to predict how the crowd would classify images of galaxies, based on their morphology.
 
 I used convolutional neural networks and incorporated the rotation invariance of the images into the network architecture. I also used lots of data augmentation. More information about my approach can be found [in this blogpost](http://benanne.github.io/2014/04/05/galaxy-zoo.html). Documentation is also available in the GitHub repository.
 
-[Code on GitHub](https://github.com/benanne/kaggle-galaxies)
+* [Code on GitHub](https://github.com/benanne/kaggle-galaxies)
 
 ## Morb
 
@@ -26,13 +41,13 @@ RBM implementations typically focus on one particular aspect of the model; for e
 
 With Morb, I tried to tackle this issue by separating the implementation of different unit types, different parameterisations and different learning algorithms. That way, they all can be combined with each other, and using multiple unit types and parameter types together in a single model is also possible.
 
-Documentation is limited for now, but this is a work in progress.
+I am no longer working on this since I'm not really using RBMs in my research anymore.
 
 <figure>
     <a href="https://github.com/benanne/morb"><img src="/images/morblogo.png"></a>
 </figure>
 
-[Code on GitHub](https://github.com/benanne/morb)
+* [Code on GitHub](https://github.com/benanne/morb)
 
 ## Kaggle whale detection challenge solution
 
@@ -56,4 +71,4 @@ Hyperparameters for all these steps were optimised in a big random search. At th
 
 The processing pipeline is in the file [pipeline_job.py](https://github.com/benanne/kaggle-whales/blob/master/pipeline_job.py). My implementation of spherical K-means is in [kmeans.py](https://github.com/benanne/kaggle-whales/blob/master/kmeans.py).
 
-[Code on GitHub](https://github.com/benanne/kaggle-whales)
+* [Code on GitHub](https://github.com/benanne/kaggle-whales)

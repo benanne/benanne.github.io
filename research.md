@@ -14,7 +14,7 @@ My main research interest is learning hierarchical representations of musical au
 
 For this, I make use of feature learning and *[deep learning](http://en.wikipedia.org/wiki/Deep_learning)* techniques. I also use collaborative filtering techniques for music recommendation. A few selected papers are listed below, please refer to Google Scholar for [an overview of my publications](http://scholar.google.be/citations?user=2ZU62T4AAAAJ).
 
-### End-to-end learning for music audio (ICASSP 2014, to appear)
+### End-to-end learning for music audio (ICASSP 2014)
 
 Sander Dieleman, Benjamin Schrauwen
 

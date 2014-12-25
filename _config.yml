@@ -13,7 +13,7 @@ owner:
   bio:            "PhD Student at Ghent University"
   email:          sanderdieleman@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:        sedielem
   facebook:       
   github:         benanne
   stackexchange:  
@@ -41,9 +41,6 @@ links:
   - title: ResLab
     url: http://reslab.elis.ugent.be
     external: true
-  - title: MetaOptimize
-    url: http://metaoptimize.com/qa
-    external: true
   - title: r/machinelearning
     url: http://www.reddit.com/r/machinelearning
     external: true
@@ -58,4 +55,4 @@ pygments:    true
 markdown:    kramdown
 
 # Amount of posts to show on home page
-paginate: 5
+paginate: 10
