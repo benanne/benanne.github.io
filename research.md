@@ -21,11 +21,9 @@ A few selected papers are listed below, please refer to Google Scholar for [an o
 
 Sander Dieleman, Kyle W. Willett, Joni Dambre
 
-I wrote a paper about my winning entry for the [Galaxy Challenge on Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge), which I also [wrote about on this blog last year](http://benanne.github.io/2014/04/05/galaxy-zoo.html).
+I wrote a paper about my winning entry for the [Galaxy Challenge on Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge), which I also [wrote about on this blog last year](http://benanne.github.io/2014/04/05/galaxy-zoo.html). In short, I trained convolutional neural networks for galaxy morphology prediction based on images, and made some modifications to the network architecture to exploit the rotational symmetry of the images. The paper was written together with one of the competition organizers and special attention is paid to how astronomers can actually benefit from this work.
 
-In short, I trained convolutional neural networks for galaxy morphology prediction based on images, and made some modifications to the network architecture to exploit the rotational symmetry of the images. The paper was written together with one of the competition organizers and special attention is paid to how astronomers can actually benefit from this work.
-
-[**Paper (arXiv**](http://arxiv.org/abs/1503.07077)
+[**Paper (arXiv)**](http://arxiv.org/abs/1503.07077)
 
 <figure>
     <a href="/images/architecture.png"><img src="/images/architecture.png" alt="Schematic diagram of the architecture of a convolutional network designed to exploit rotational symmetry in images of galaxies."></a>
