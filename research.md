@@ -12,7 +12,27 @@ image:
 
 My main research interest is learning hierarchical representations of musical audio signals: finding ways to represent music audio to facilitate classification and recommendation by learning from data.
 
-For this, I make use of feature learning and *[deep learning](http://en.wikipedia.org/wiki/Deep_learning)* techniques. I also use collaborative filtering techniques for music recommendation. A few selected papers are listed below, please refer to Google Scholar for [an overview of my publications](http://scholar.google.be/citations?user=2ZU62T4AAAAJ).
+For this, I make use of feature learning and *[deep learning](http://en.wikipedia.org/wiki/Deep_learning)* techniques. I also use collaborative filtering techniques for music recommendation. Occasionally I venture outside of the realm of music and apply deep learning techniques to other types of data, such as images.
+
+A few selected papers are listed below, please refer to Google Scholar for [an overview of my publications](http://scholar.google.be/citations?user=2ZU62T4AAAAJ).
+
+
+### Rotation-invariant convolutional neural networks for galaxy morphology prediction (MNRAS, accepted)
+
+Sander Dieleman, Kyle W. Willett, Joni Dambre
+
+I wrote a paper about my winning entry for the [Galaxy Challenge on Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge), which I also [wrote about on this blog last year](http://benanne.github.io/2014/04/05/galaxy-zoo.html).
+
+In short, I trained convolutional neural networks for galaxy morphology prediction based on images, and made some modifications to the network architecture to exploit the rotational symmetry of the images. The paper was written together with one of the competition organizers and special attention is paid to how astronomers can actually benefit from this work.
+
+[**Paper (arXiv**](http://arxiv.org/abs/1503.07077)
+
+<figure>
+    <a href="/images/architecture.png"><img src="/images/architecture.png" alt="Schematic diagram of the architecture of a convolutional network designed to exploit rotational symmetry in images of galaxies."></a>
+    <figcaption>Schematic diagram of the architecture of a convolutional network designed to exploit rotational symmetry in images of galaxies.</figcaption>
+</figure>
+
+
 
 ### End-to-end learning for music audio (ICASSP 2014)
 
@@ -63,24 +83,3 @@ Recent results in feature learning indicate that simple algorithms such as K-mea
 
     <figcaption>Three multiscale time-frequency representations of audio signals. From left to right: multiresolution spectrograms, Gaussian pyramid, Laplacian pyramid.</figcaption>
 </figure>
-
-<!-- 
-## What HPSTR brings to the table:
-
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Background image support.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Comments powered by [Disqus](http://disqus.com) if you choose to enable.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy
-* [Grunt](http://gruntjs.com) build script for easy theme development
-
-<div markdown="0"><a href="{{ site.url }}/theme-setup" class="btn btn-info">Install the Theme</a></div>
-
-[^1]: Example: *domain.com/category-name/post-title* -->
