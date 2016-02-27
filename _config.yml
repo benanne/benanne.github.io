@@ -4,7 +4,9 @@ disqus_shortname: benanne
 # Your site's domain goes here. When working locally use localhost server leave blank
 # PS. If you set this wrong stylesheets and scripts won't load and most links will break.
 # PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
+# url:
 url:              http://benanne.github.io
+
 
 # Owner/author information
 owner:
@@ -38,21 +40,19 @@ links:
     url: /research
   - title: Software
     url: /software
-  - title: ResLab
-    url: http://reslab.elis.ugent.be
+  - title: DeepMind
+    url: http://deepmind.com/
     external: true
   - title: r/machinelearning
     url: http://www.reddit.com/r/machinelearning
-    external: true
-  - title: Deep Learning G+
-    url: https://plus.google.com/communities/112866381580457264725
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Brussels
 future:      true
-pygments:    true
+highlighter: pygments
 markdown:    kramdown
 
 # Amount of posts to show on home page
+gems: [jekyll-paginate]
 paginate: 10

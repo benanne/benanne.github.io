@@ -12,15 +12,25 @@ image:
 
 ## Lasagne
 
-Lasagne is a lightweight library to build and train neural networks in Theano. Pragmatism and transparency are two of its main design goals, and it is built with a strong focus on feed-forward neural networks. It's supposed to help you build networks *with* Theano, not on top of it, so it doesn't hide Theano behind abstractions.
+Lasagne is a lightweight library to build and train neural networks in Theano. Pragmatism and transparency are two of its main design goals. It's supposed to help you build networks *with* Theano, not on top of it, so it doesn't hide Theano behind abstractions.
 
-Lasagne grew out of my internship at Spotify and my code for the Galaxy Challenge on Kaggle (see below as well). The core development team consists of [Daniel Nouri](http://danielnouri.org/), [Jan Schlüter](http://www.ofai.at/~jan.schlueter/), [Colin Raffel](http://colinraffel.com/), [Aäron van den Oord](https://twitter.com/avdnoord) and myself. It is very much a work in progress. For now tests and documentation are scarce, but we're working on it. Input is very welcome!
+Lasagne grew out of my internship at Spotify and my code for the Galaxy Challenge on Kaggle (see below as well). The core development team consists of [Daniel Nouri](http://danielnouri.org/), [Jan Schlüter](http://www.ofai.at/~jan.schlueter/), [Colin Raffel](http://colinraffel.com/), [Aäron van den Oord](https://twitter.com/avdnoord), [Eric Battenberg](http://ericbattenberg.com/), [Eben Olson](https://github.com/ebenolson), [Søren Kaae Sønderby](http://www1.bio.ku.dk/english/staff/?pure=en/persons/418078) and myself.
 
-* [Code on GitHub](https://github.com/benanne/lasagne)
+* [Code on GitHub](https://github.com/Lasagne/Lasagne)
+
+
+## Kaggle plankton classification solution
+
+Six of my colleagues and I won the first edition of the [National Data Science Bowl on Kaggle](https://www.kaggle.com/c/datasciencebowl), where the goal was to classify grayscale images of plankton according to species.
+
+We used convolutional neural networks with architectures inspired by OxfordNet, and used some tricks to exploit the rotation invariance properties of the images. More information about our approach can be found [in this blogpost](http://benanne.github.io/2015/03/17/plankton.html). Documentation is also available in the GitHub repository.
+
+* [Code on GitHub](https://github.com/benanne/kaggle-ndsb)
+
 
 ## Weighted matrix factorization
 
-I recently spent some time implementing the weighted matrix factorization (WMF) algorithm by Hu, Koren and Volinsky (*Collaborative filtering for implicit feedback datasets*, ICDM 2008) both with numpy/scipy and with Theano. The Theano version ended up being hard to optimize, in most cases the numpy/scipy version is actually faster. Both implementations were not thoroughly tested and are not guaranteed to be correct. Use them at your own risk!
+I spent some time implementing the weighted matrix factorization (WMF) algorithm by Hu, Koren and Volinsky (*Collaborative filtering for implicit feedback datasets*, ICDM 2008) both with numpy/scipy and with Theano. The Theano version ended up being hard to optimize, in most cases the numpy/scipy version is actually faster. Both implementations were not thoroughly tested and are not guaranteed to be correct. Use them at your own risk!
 
 * [wmf on GitHub](https://github.com/benanne/wmf)
 * [theano_wmf on GitHub](https://github.com/benanne/theano_wmf)

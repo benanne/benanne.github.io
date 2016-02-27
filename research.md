@@ -17,7 +17,32 @@ For this, I make use of feature learning and *[deep learning](http://en.wikipedi
 A few selected papers are listed below, please refer to Google Scholar for [an overview of my publications](http://scholar.google.be/citations?user=2ZU62T4AAAAJ).
 
 
-### Rotation-invariant convolutional neural networks for galaxy morphology prediction (MNRAS, accepted)
+### Exploiting cyclic symmetry in convolutional neural networks (submitted)
+
+Sander Dieleman, Jeffrey De Fauw, Koray Kavukcuoglu
+
+Many classes of images exhibit rotational symmetry. Convolutional neural networks are sometimes trained using data augmentation to exploit this, but they are still required to learn the rotation equivariance properties from the data. Encoding these properties into the network architecture could result in a more efficient use of the parameter budget by relieving the model from learning them. We introduce four operations which can be inserted into neural network models as layers, and which can be combined to make these models partially equivariant to rotations.
+
+[**Paper (arXiv)**](http://arxiv.org/abs/1602.02660)
+
+<figure>
+    <a href="/images/cyclic_diagram.png"><img src="/images/cyclic_diagram.png" alt="Schematic representation of the effect of the proposed cyclic slice, roll and pool operations on the faeture maps in a convolutional neural network."></a>
+    <figcaption>Schematic representation of the effect of the proposed cyclic slice, roll and pool operations on the faeture maps in a convolutional neural network.</figcaption>
+</figure>
+
+
+
+### Learning feature hierarchies for musical audio signals (PhD Thesis)
+
+Sander Dieleman
+
+This is my PhD thesis, which I defended in January 2016. It covers most of my work on applying deep learning to content-based music information retrieval. My work on galaxy morphology prediction is included as an appendix. Part of the front matter is in Dutch, but the main matter is in English.
+
+[**Thesis (PDF)**](https://www.dropbox.com/s/22bqmco45179t7z/thesis-FINAL.pdf)
+
+
+
+### Rotation-invariant convolutional neural networks for galaxy morphology prediction (MNRAS)
 
 Sander Dieleman, Kyle W. Willett, Joni Dambre
 
