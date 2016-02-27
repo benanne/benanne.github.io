@@ -30,7 +30,7 @@ Many classes of images exhibit rotational symmetry. Convolutional neural network
     <figcaption>Schematic representation of the effect of the proposed cyclic slice, roll and pool operations on the faeture maps in a convolutional neural network.</figcaption>
 </figure>
 
-### Mastering the game of Go with deep neural networks and tree search
+### Mastering the game of Go with deep neural networks and tree search (Nature)
 
 David Silver, Aja Huang, Chris J. Maddison, Arthur Guez, Laurent Sifre, George van den Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda Panneershelvam, Marc Lanctot, **Sander Dieleman**, Dominik Grewe, John Nham, Nal Kalchbrenner, Ilya Sutskever, Timothy Lillicrap, Madeleine Leach, Koray Kavukcuoglu, Thore Graepel, Demis Hassabis
 
