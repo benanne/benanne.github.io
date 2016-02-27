@@ -19,7 +19,7 @@ A few selected papers are listed below, please refer to Google Scholar for [an o
 
 ### Exploiting cyclic symmetry in convolutional neural networks (submitted)
 
-Sander Dieleman, Jeffrey De Fauw, Koray Kavukcuoglu
+**Sander Dieleman**, Jeffrey De Fauw, Koray Kavukcuoglu
 
 Many classes of images exhibit rotational symmetry. Convolutional neural networks are sometimes trained using data augmentation to exploit this, but they are still required to learn the rotation equivariance properties from the data. Encoding these properties into the network architecture could result in a more efficient use of the parameter budget by relieving the model from learning them. We introduce four operations which can be inserted into neural network models as layers, and which can be combined to make these models partially equivariant to rotations.
 
@@ -30,11 +30,17 @@ Many classes of images exhibit rotational symmetry. Convolutional neural network
     <figcaption>Schematic representation of the effect of the proposed cyclic slice, roll and pool operations on the faeture maps in a convolutional neural network.</figcaption>
 </figure>
 
+### Mastering the game of Go with deep neural networks and tree search
 
+David Silver, Aja Huang, Chris J. Maddison, Arthur Guez, Laurent Sifre, George van den Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda Panneershelvam, Marc Lanctot, **Sander Dieleman**, Dominik Grewe, John Nham, Nal Kalchbrenner, Ilya Sutskever, Timothy Lillicrap, Madeleine Leach, Koray Kavukcuoglu, Thore Graepel, Demis Hassabis
+
+The game of Go has long been viewed as the most challenging of classic games for artificial intelligence owing to its enormous search space and the difficulty of evaluating board positions and moves. Here we introduce a new approach to computer Go that uses ‘value networks’ to evaluate board positions and ‘policy networks’ to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games, and reinforcement learning from games of self-play. Without any lookahead search, the neural networks play Go at the level of state-of-the-art Monte Carlo tree search programs that simulate thousands of random games of self-play. We also introduce a new search algorithm that combines Monte Carlo simulation with value and policy networks. Using this search algorithm, our program AlphaGo achieved a 99.8% winning rate against other Go programs, and defeated the human European Go champion by 5 games to 0. This is the first time that a computer program has defeated a human professional player in the full-sized game of Go, a feat previously thought to be at least a decade away.
+
+[**Paper**](http://www.nature.com/nature/journal/v529/n7587/full/nature16961.html) - [**AlphaGo website**](http://deepmind.com/alpha-go.html)
 
 ### Learning feature hierarchies for musical audio signals (PhD Thesis)
 
-Sander Dieleman
+**Sander Dieleman**
 
 This is my PhD thesis, which I defended in January 2016. It covers most of my work on applying deep learning to content-based music information retrieval. My work on galaxy morphology prediction is included as an appendix. Part of the front matter is in Dutch, but the main matter is in English.
 
@@ -44,11 +50,11 @@ This is my PhD thesis, which I defended in January 2016. It covers most of my wo
 
 ### Rotation-invariant convolutional neural networks for galaxy morphology prediction (MNRAS)
 
-Sander Dieleman, Kyle W. Willett, Joni Dambre
+**Sander Dieleman**, Kyle W. Willett, Joni Dambre
 
 I wrote a paper about my winning entry for the [Galaxy Challenge on Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge), which I also [wrote about on this blog last year](http://benanne.github.io/2014/04/05/galaxy-zoo.html). In short, I trained convolutional neural networks for galaxy morphology prediction based on images, and made some modifications to the network architecture to exploit the rotational symmetry of the images. The paper was written together with one of the competition organizers and special attention is paid to how astronomers can actually benefit from this work.
 
-[**Paper**](http://mnras.oxfordjournals.org/content/450/2/1441)
+[**Paper**](http://mnras.oxfordjournals.org/content/450/2/1441) - [**Paper (arXiv)**](http://arxiv.org/abs/1503.07077)
 
 <figure>
     <a href="/images/architecture.png"><img src="/images/architecture.png" alt="Schematic diagram of the architecture of a convolutional network designed to exploit rotational symmetry in images of galaxies."></a>
@@ -59,7 +65,7 @@ I wrote a paper about my winning entry for the [Galaxy Challenge on Kaggle](http
 
 ### End-to-end learning for music audio (ICASSP 2014)
 
-Sander Dieleman, Benjamin Schrauwen
+**Sander Dieleman**, Benjamin Schrauwen
 
 Content-based music information retrieval tasks have traditionally been solved using engineered features and shallow processing architectures. In recent years, there has been increasing interest in using feature learning and deep architectures instead, thus reducing the required engineering
 effort and the need for prior knowledge. However, this new approach typically still relies on mid-level representations of music audio, e.g. spectrograms, instead of raw audio signals. In this paper, we investigate whether it is possible to train convolutional neural networks directly on raw audio signals. The networks are able to autonomously discover frequency decompositions from raw audio, as well as phase- and translation-invariant feature representations.
@@ -78,7 +84,7 @@ effort and the need for prior knowledge. However, this new approach typically st
 
 ### Deep content-based music recommendation (NIPS 2013)
 
-Aäron van den Oord, Sander Dieleman, Benjamin Schrauwen
+Aäron van den Oord, **Sander Dieleman**, Benjamin Schrauwen
 
 The collaborative filtering approach to music recommendation suffers from the cold start problem: it fails when no listening data is available, so it is not effective for recommending new and unpopular songs. In this paper, we use a latent factor model for recommendation, and predict the latent factors from music audio when they cannot be obtained from listening data, using a deep convolutional neural network. Predicted latent factors produce sensible recommendations, despite the fact that there is a large semantic gap between the characteristics of a song that affect user preference and the corresponding audio signal.
 
@@ -93,7 +99,7 @@ The collaborative filtering approach to music recommendation suffers from the co
 
 ### Multiscale approaches to music audio feature learning (ISMIR 2013)
 
-Sander Dieleman, Benjamin Schrauwen
+**Sander Dieleman**, Benjamin Schrauwen
 
 Recent results in feature learning indicate that simple algorithms such as K-means can be very effective, sometimes surpassing more complicated approaches based on restricted Boltzmann machines, autoencoders or sparse coding. Furthermore, there has been increased interest in multiscale representations of music audio recently. Such representations are more versatile because music audio exhibits structure on multiple timescales, which are relevant for different MIR tasks to varying degrees. We develop and compare three approaches to multiscale audio feature learning using the spherical K-means algorithm.
 
