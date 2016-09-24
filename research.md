@@ -17,7 +17,21 @@ For this, I make use of feature learning and *[deep learning](http://en.wikipedi
 A few selected papers are listed below, please refer to Google Scholar for [an overview of my publications](http://scholar.google.be/citations?user=2ZU62T4AAAAJ).
 
 
-### Exploiting cyclic symmetry in convolutional neural networks (submitted)
+### WaveNet: a generative model for raw audio
+
+Aäron van den Oord, **Sander Dieleman**, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, Koray, Kavukcuoglu
+
+This paper introduces WaveNet, a deep neural network for generating raw audio waveforms. The model is fully probabilistic and autoregressive, with the predictive distribution for each audio sample conditioned on all previous ones; nonetheless we show that it can be efficiently trained on data with tens of thousands of samples per second of audio. When applied to text-to-speech, it yields state-of-the-art performance, with human listeners rating it as significantly more natural sounding than the best parametric and concatenative systems for both English and Mandarin. A single WaveNet can capture the characteristics of many different speakers with equal fidelity, and can switch between them by conditioning on the speaker identity. When trained to model music, we find that it generates novel and often highly realistic musical fragments. We also show that it can be employed as a discriminative model, returning promising results for phoneme recognition.
+
+[**Paper (arXiv)**](http://arxiv.org/abs/1609.03499)
+
+<figure>
+    <a href="/images/wavenet.png"><img src="/images/wavenet.png" alt="Visualization of a stack of dilated causal convolutional layers."></a>
+    <figcaption>Visualization of a stack of dilated causal convolutional layers.</figcaption>
+</figure>
+
+
+### Exploiting cyclic symmetry in convolutional neural networks (ICML 2016)
 
 **Sander Dieleman**, Jeffrey De Fauw, Koray Kavukcuoglu
 
@@ -29,6 +43,7 @@ Many classes of images exhibit rotational symmetry. Convolutional neural network
     <a href="/images/cyclic_diagram.png"><img src="/images/cyclic_diagram.png" alt="Schematic representation of the effect of the proposed cyclic slice, roll and pool operations on the faeture maps in a convolutional neural network."></a>
     <figcaption>Schematic representation of the effect of the proposed cyclic slice, roll and pool operations on the faeture maps in a convolutional neural network.</figcaption>
 </figure>
+
 
 ### Mastering the game of Go with deep neural networks and tree search (Nature)
 
