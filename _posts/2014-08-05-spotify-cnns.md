@@ -49,7 +49,7 @@ Despite all these challenges, it is clear that the actual *sound* of a song will
 
 ## <a name="predicting"></a>Predicting listening preferences with deep learning
 
-In December last year, my colleague Aäron van den Oord and I published a paper on this topic at NIPS, titled **'[Deep content-based music recommendation](http://nips.cc/Conferences/2013/Program/event.php?ID=4028)'**. We tried to tackle the problem of predicting listening preferences from audio signals by training a regression model to predict the **latent representations** of songs that were obtained from a collaborative filtering model. This way, we could predict the representation of a song in the collaborative filtering space, even if no usage data was available. (As you can probably infer from the title of the paper, the regression model in question was a deep neural network.)
+In December last year, my colleague Aäron van den Oord and I published a paper on this topic at NIPS, titled **'[Deep content-based music recommendation](https://papers.nips.cc/paper/5004-deep-content-based-music-recommendation)'**. We tried to tackle the problem of predicting listening preferences from audio signals by training a regression model to predict the **latent representations** of songs that were obtained from a collaborative filtering model. This way, we could predict the representation of a song in the collaborative filtering space, even if no usage data was available. (As you can probably infer from the title of the paper, the regression model in question was a deep neural network.)
 
 The underlying idea of this approach is that many collaborative filtering models work by projecting both the listeners and the songs into a shared low-dimensional **latent space**. The position of a song in this space encodes all kinds of information that affects listening preferences. If two songs are close together in this space, they are probably similar. If a song is close to a user, it is probably a good recommendation for that user (provided that they haven't heard it yet). If we can predict the position of a song in this space from audio, we can recommend it to the right audience without having to rely on historical usage data. 
 
@@ -57,7 +57,7 @@ We visualized this in the paper by projecting the predictions of our model in th
 
 <figure>
     <a href="/images/prentje_nips.png"><img src="/images/prentje_nips.png" alt="t-SNE visualization of user listening patterns predicted from audio."></a>
-    <figcaption>t-SNE visualization of the latent space (middle). A few close-ups show artists whose songs are projected in specific areas. Taken from <i><a href="http://nips.cc/Conferences/2013/Program/event.php?ID=4028">Deep content-based music recommendation</a>, Aäron van den Oord, Sander Dieleman and Benjamin Schrauwen, NIPS 2013.</i></figcaption>
+    <figcaption>t-SNE visualization of the latent space (middle). A few close-ups show artists whose songs are projected in specific areas. Taken from <i><a href="https://papers.nips.cc/paper/5004-deep-content-based-music-recommendation">Deep content-based music recommendation</a>, Aäron van den Oord, Sander Dieleman and Benjamin Schrauwen, NIPS 2013.</i></figcaption>
 </figure>
 
 
@@ -315,7 +315,7 @@ Another type of user feedback that Spotify collects are the **thumbs up** and **
 
 ## <a name="conclusion"></a>Conclusion
 
-In this post I've given an overview of my work so far as a machine learning intern at Spotify. I've explained my approach to using convnets for audio-based music recommendation and I've tried to provide some insight into what the networks actually learn. For more details about the approach, please refer to the NIPS 2013 paper '[Deep content-based music recommendation](http://nips.cc/Conferences/2013/Program/event.php?ID=4028)' by Aäron van den Oord and myself.
+In this post I've given an overview of my work so far as a machine learning intern at Spotify. I've explained my approach to using convnets for audio-based music recommendation and I've tried to provide some insight into what the networks actually learn. For more details about the approach, please refer to the NIPS 2013 paper '[Deep content-based music recommendation](https://papers.nips.cc/paper/5004-deep-content-based-music-recommendation)' by Aäron van den Oord and myself.
 
 If you are interested in deep learning, feature learning and its applications to music, have a look at my [research page](http://benanne.github.io/research/) for an overview of some other work I have done in this domain. If you're interested in Spotify's approach to music recommendation, check out [these](http://www.slideshare.net/MrChrisJohnson/algorithmic-music-recommendations-at-spotify) [presentations](http://www.slideshare.net/erikbern/music-recommendations-mlconf-2014) on Slideshare and [Erik Bernhardsson's blog](http://erikbern.com/).
 
