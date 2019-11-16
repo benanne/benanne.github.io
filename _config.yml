@@ -1,31 +1,34 @@
 title:            Sander Dieleman
-description:      "Machine learning, deep learning, music information retrieval, recommender systems"
+description:      I write about machine learning, deep learning, music information retrieval, recommender systems, generative models and more.
 disqus_shortname: benanne
-# Your site's domain goes here. When working locally use localhost server leave blank
-# PS. If you set this wrong stylesheets and scripts won't load and most links will break.
-# PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
-# url:
-url:              http://benanne.github.io
-
+reading_time:     true
+words_per_minute: 200
+# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:              https://benanne.github.io
 
 # Owner/author information
 owner:
   name:           Sander Dieleman
   avatar:         avatar.jpg
-  bio:            "Research Scientist at Google DeepMind"
+  bio:            "Research Scientist at DeepMind"
   email:          sanderdieleman@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        sedielem
   facebook:       
   github:         benanne
   stackexchange:  
-  linkedin:       36508398
+  linkedin:       sanderdieleman
   instagram:      
   flickr:         
   tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/+SanderDieleman
-  kaggle:         http://www.kaggle.com/users/41181/sedielem
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:
+  reddit:         benanne
+  # kaggle:         http://www.kaggle.com/users/41181/sedielem
+
+# Background image to be tiled on all pages
+background: 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-49337047-1
@@ -33,26 +36,58 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Research
-    url: /research
-  - title: Software
-    url: /software
-  - title: DeepMind
-    url: http://deepmind.com/
-    external: true
-  - title: r/machinelearning
-    url: http://www.reddit.com/r/machinelearning
-    external: true
-
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/Brussels
-future:      true
-highlighter: pygments
+timezone:    Europe/London
+future:      true  # publish future dated posts --  true, false (default) 
+highlighter: rouge
 markdown:    kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# Amount of posts to show on home page
-gems: [jekyll-paginate]
-paginate: 10
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:year/:month/:day/:title:output_ext
+# Note: this is set to /:categories/:title/ by default, but I've had to change it for
+# backwards compatibility (i.e. to avoid breaking all my URLs and disqus comments).
+
+# Amount of post to show on home page
+paginate: 5
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+include: 
+  - .htaccess
+exclude: 
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
