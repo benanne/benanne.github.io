@@ -83,7 +83,7 @@ When extracting information from audio signals, it turns out that we can often j
 </figure>
 
 The phase component of a spectrogram is tricky to model for a number of reasons:
-- it is an **angle**: $$\phi \in [0, 2 \pi[$$ and it wraps around;
+- it is an **angle**: $$\phi \in [0, 2 \pi)$$ and it wraps around;
 - it becomes **effectively random** as the magnitude tends towards 0, because noise starts to dominate;
 - absolute phase is less meaningful, but **relative phase differences over time matter perceptually**.
 
