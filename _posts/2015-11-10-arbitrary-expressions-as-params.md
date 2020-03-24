@@ -22,7 +22,7 @@ One of the key [design principles](http://lasagne.readthedocs.org/en/latest/user
 
 In keeping with this philosophy, Jan recently added a feature that we've been discussing early on in designing the API ([#11](https://github.com/Lasagne/Lasagne/issues/11)): it allows any learnable layer parameter to be specified as a mathematical expression evaluating to a correctly-shaped tensor. Previously, layer parameters had to be Theano shared variables, i.e., naked tensors to be learned directly. **This new feature makes it possible to constrain network parameters in various, potentially creative ways.** Below, we'll go through a few examples of what is now possible that wasn't before.
 
-### Default case
+## Default case
 
 Let's create a simple fully-connected layer of 500 units on top of an input layer of 784 units.
 
@@ -33,7 +33,7 @@ l1 = InputLayer((batch_size, 784))
 l2 = DenseLayer(l1, num_units=500)
 {% endhighlight %}
 
-### Autoencoder with tied weights
+## Autoencoder with tied weights
 
 Autoencoders with tied weights are a common use case, and until now implementing them in Lasagne was a bit tricky. Weight sharing in Lasagne has always been easy and intuitive:
 
@@ -52,7 +52,7 @@ l3 = DenseLayer(l2, num_units=784, W=l2.W.T)
 
 ... but that didn't work before: `l2.W.T` is a Theano expression, but not a Theano shared variable as was expected. This is counter-intuitive, and indeed, [people expected it to work](https://groups.google.com/forum/#!searchin/lasagne-users/tied$20weights/lasagne-users/ky78GBSgnBI/z10Br4p4kHMJ) and were disappointed to find out that it didn't. With the new feature this is no longer true. The above will work just fine. Yay!
 
-### Factorized weights
+## Factorized weights
 
 To reduce the number of parameters in your network (e.g. to prevent overfitting), you could force large parameter matrices to be *low-rank* by factorizing them. In our example from before, we could factorize the 784x500 weight matrix into the product of a 784x100 and a 100x500 matrix. The number of weights of the layer then goes down from 392000 to 128400 (not including the biases).
 
@@ -75,7 +75,7 @@ l2 = DenseLayer(l2_a, num_units=500)
 
 Other types of factorizations [may also be worth investigating!](http://arxiv.org/abs/1509.06569)
 
-### Positive weights
+## Positive weights
 
 If you want to force the weights of a layer to be positive, you can learn their logarithm:
 
@@ -87,7 +87,7 @@ l2 = DenseLayer(l1, num_units=500, W=T.exp(w))
 
 You could also use `T.softplus(w)` instead of `T.exp(w)`. You might also be tempted to try sticking a ReLU in there (`T.maximum(w, 0)`), but note that applying the linear rectifier to the weight matrix would lead to many of the underlying weights getting stuck at negative values, as the linear rectifier has zero gradient for negative inputs!
 
-### Positive semi-definite weights
+## Positive semi-definite weights
 
 There are plenty of other creative uses, such as constraining weights to be positive semi-definite (for whatever reason):
 
@@ -98,13 +98,13 @@ w_psd = T.dot(w, w.T)
 l3 = DenseLayer(l2, num_units=500, W=w_psd)
 {% endhighlight %}
 
-### Limitations
+## Limitations
 
 There are only a couple of limitations to using Theano expressions as layer parameters. One is that Lasagne functions and methods such as `Layer.get_params()` will implicitly assume that any shared variable featuring in these Theano expressions is to be treated as a parameter. In practice that means you can't mix learnable and non-learnable parameter variables in a single expression. Also, the same tags will apply to all shared variables in an expression. More information about parameter tags can be found in [the documentation](http://lasagne.readthedocs.org/en/latest/modules/layers/base.html#lasagne.layers.Layer.get_params).
 
 For almost all use cases, these limitations should not be an issue. If they are, your best bet is to implement a custom layer class. Luckily, [this is also very easy in Lasagne](http://lasagne.readthedocs.org/en/latest/user/custom_layers.html).
 
-### Why it works
+## Why it works
 
 All of this is made possible because Lasagne builds on Theano, which takes care of backpropagating through the parameter expression to any underlying learned tensors. In frameworks building on hard-coded layer implementations rather than an automatic expression compiler, all these examples would require writing custom backpropagation code.
 

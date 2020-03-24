@@ -430,7 +430,7 @@ One interesting question is **whether adversarial models are going to catch up**
 
 At any rate, **splitting up the problem into multiple stages** that can be solved separately has been fruitful, and I think it will continue to be. So far, hierarchical models (with learnt or handcrafted intermediate representations) and spectrogram-based models with vocoders have worked well, but perhaps there are other ways to "divide and conquer". A nice example of a different kind of split in the image domain is the one used in Subscale Pixel Networks[^spn], where separate networks model the most and least significant bits of the image data.
 
-### <a name="conclusion"></a> Conclusion
+## <a name="conclusion"></a> Conclusion
 
 If you made it to the end of this post, congratulations! I hope I've convinced you that music modelling in the waveform domain is an interesting research problem. It is also **very far from a solved problem**, so there are lots of opportunities for interesting new work. I have probably missed a lot of relevant references, especially when it comes to more recent work. If you know about relevant work that isn't discussed here, feel free to share it in the comments! Questions about this blog post and this line of research are very welcome as well.
 
