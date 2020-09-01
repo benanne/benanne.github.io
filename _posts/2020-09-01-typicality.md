@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Musings on typicality
-description: "A brief summary of my current thoughts on typicality, and its relevance to likelihood-based generative models."
+description: "A summary of my current thoughts on typicality, and its relevance to likelihood-based generative models."
 
 tags: [typicality, likelihood, probability, deep learning, generative models]
 
