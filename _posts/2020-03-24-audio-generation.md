@@ -121,7 +121,7 @@ Note that the density of a conditioning signal is often correlated with its leve
 
 Likelihood-based models directly parameterise $$p_X(x)$$. The parameters $$\theta$$ are then fit by maximising the likelihood of the data under the model:
 
-$$\mathcal{L}_\theta(x) = \sum_{x \in X} \log p_X(x|\theta) \quad \quad \theta^* = \arg \max_\theta \mathcal{L}_\theta(x) .$$ 
+$$\mathcal{L}_\theta(X) = \sum_{x \in X} \log p_X(x|\theta) \quad \quad \theta^* = \arg \max_\theta \mathcal{L}_\theta(X) .$$ 
 
 Note that this is typically done in the log-domain because it simplifies computations and improves numerical stability. Because the model directly parameterises $$p_X(x)$$, we can **easily infer the likelihood of any** $$x$$, so we get an explicit model. Three popular flavours of likelihood-based models are autoregressive models, flow-based models and variational autoencoders. The following three subsections provide a brief overview of each.
 
