@@ -7,7 +7,7 @@ tags: [music, audio, waveform, raw audio, deep learning, generative models]
 
 image:
   feature: musicbg2.jpg
-comments: true
+comments: false
 share: true
 ---
 

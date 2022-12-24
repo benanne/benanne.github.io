@@ -8,7 +8,7 @@ tags: [deep learning, neural networks, Theano, Lasagne]
 
 image:
   feature: lasagna.jpg
-comments: true
+comments: false
 share: true
 ---
 

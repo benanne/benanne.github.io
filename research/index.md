@@ -5,10 +5,37 @@ tags: [research]
 image:
   feature: 12.jpg
 comments: false
-modified: 2019-11-16
+modified: 2022-12-24
 ---
 
 My main research interests are in generative modelling and representation learning, with a focus on audio signals and music. I have also worked on music recommendation and image classification in the past. Selected papers are listed below, please refer to Google Scholar for [a complete list of my publications](http://scholar.google.com/citations?user=2ZU62T4AAAAJ).
+
+### Continuous diffusion for categorical data
+
+<i>**Sander Dieleman**, Laurent Sartran, Arman Roshannai, Nikolay Savinov, Yaroslav Ganin, Pierre H Richemond, Arnaud Doucet, Robin Strudel, Chris Dyer, Conor Durkan, Curtis Hawthorne, Rémi Leblond, Will Grathwohl, Jonas Adler</i>
+
+Diffusion models have quickly become the go-to paradigm for generative modelling of perceptual signals (such as images and sound) through iterative refinement. Their success hinges on the fact that the underlying physical phenomena are continuous. For inherently discrete and categorical data such as language, various diffusion-inspired alternatives have been proposed. However, the continuous nature of diffusion models conveys many benefits, and in this work we endeavour to preserve it. We propose CDCD, a framework for modelling categorical data with diffusion models that are continuous both in time and input space. We demonstrate its efficacy on several language modelling tasks.
+
+[**Paper (arXiv)**](https://arxiv.org/abs/2211.15089)
+
+<figure>
+    <a href="/images/cdcd_fig.png"><img src="/images/cdcd_fig.png" alt="Diagram of the CDCD framework, with novel components bolded."></a>
+    <figcaption>Diagram of the CDCD framework, with novel components bolded.</figcaption>
+</figure>
+
+
+### Variable-rate discrete representation learning
+
+<i>**Sander Dieleman**, Charlie Nash, Jesse Engel, Karen Simonyan</i>
+
+Semantically meaningful information content in perceptual signals is usually unevenly distributed. In speech signals for example, there are often many silences, and the speed of pronunciation can vary considerably. In this work, we propose slow autoencoders (SlowAEs) for unsupervised learning of high-level variable-rate discrete representations of sequences, and apply them to speech. We show that the resulting event-based representations automatically grow or shrink depending on the density of salient information in the input signals, while still allowing for faithful signal reconstruction. We develop run-length Transformers (RLTs) for event-based representation modelling and use them to construct language models in the speech domain, which are able to generate grammatical and semantically coherent utterances and continuations.
+
+[**Paper (arXiv)**](https://arxiv.org/abs/2103.06089) - [**Audio samples**](https://vdrl.github.io/)
+
+<figure>
+    <a href="/images/vbr_fig.png"><img src="/images/vbr_fig.png" alt="Variable-rate discrete representation of a speech signal."></a>
+    <figcaption>Variable-rate discrete representation of a speech signal.</figcaption>
+</figure>
 
 
 ### High Fidelity Speech Synthesis with Adversarial Networks
