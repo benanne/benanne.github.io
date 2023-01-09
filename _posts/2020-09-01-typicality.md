@@ -300,7 +300,7 @@ Thanks to Katie Millican, Jeffrey De Fauw and Adam Kosiorek for their valuable i
 
 [^glow]: Kingma & Dhariwal, "[Glow: Generative flow with invertible 1x1 convolutions](https://arxiv.org/abs/1807.03039)", Neural Information Processing Systems, 2018.
 
-[^vqvae]: van den Oord, Vinyals and Kavukcuoglu, "[https://arxiv.org/abs/1711.00937](https://arxiv.org/abs/1711.00937)", Neural Information Processing Systems, 2017.
+[^vqvae]: van den Oord, Vinyals and Kavukcuoglu, "[Neural Discrete Representation Learning](https://arxiv.org/abs/1711.00937)", Neural Information Processing Systems, 2017.
 
 [^vqvae2]: Razavi, van den Oord and Vinyals, "[Generating Diverse High-Fidelity Images with VQ-VAE-2](https://arxiv.org/abs/1906.00446)", Neural Information Processing Systems, 2019.
 

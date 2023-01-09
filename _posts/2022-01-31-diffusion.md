@@ -167,7 +167,7 @@ Thanks to Conor Durkan and Katie Millican for fruitful discussions!
 
 [^scorematching]: Hyvarinen, "[Estimation of Non-Normalized Statistical Models by Score Matching](https://www.jmlr.org/papers/v6/hyvarinen05a.html)", Journal of Machine Learning Research, 2005.
 
-[^vqvae]: van den Oord, Vinyals and Kavukcuoglu, "[https://arxiv.org/abs/1711.00937](https://arxiv.org/abs/1711.00937)", Neural Information Processing Systems, 2017.
+[^vqvae]: van den Oord, Vinyals and Kavukcuoglu, "[Neural Discrete Representation Learning](https://arxiv.org/abs/1711.00937)", Neural Information Processing Systems, 2017.
 
 [^vaekingma]: Kingma and Welling, "[Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)", International Conference on Learning Representations, 2014.
 
