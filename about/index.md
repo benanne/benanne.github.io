@@ -4,7 +4,7 @@ title: About me
 image:
   feature: 12.jpg
 comments: false
-modified: 2019-11-16
+modified: 2023-02-25
 ---
 
 I'm a research scientist at [DeepMind](http://deepmind.com/) in London, UK, where I work chiefly on generative modelling at scale. Before that, I was a PhD student at [Ghent University](http://www.ugent.be/) in Belgium. On this blog, I mostly write about machine learning, deep learning, music information retrieval (MIR), recommender systems and generative models.
