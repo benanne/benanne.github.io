@@ -7,7 +7,7 @@ tags: [typicality, likelihood, probability, deep learning, generative models]
 
 image:
   feature: atypical.jpg
-comments: false
+comments: true
 share: true
 ---
 

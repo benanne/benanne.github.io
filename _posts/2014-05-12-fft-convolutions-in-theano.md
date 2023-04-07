@@ -11,7 +11,7 @@ tags: [deep learning, convolutional neural networks, convnets, Theano, convoluti
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/ -->
 
-comments: false
+comments: true
 share: true
 ---
 

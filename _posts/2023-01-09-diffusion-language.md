@@ -7,7 +7,7 @@ tags: [diffusion, score function, deep learning, generative models, language]
 
 image:
   feature: language.jpg
-comments: false
+comments: true
 share: true
 ---
 

@@ -7,7 +7,7 @@ tags: [diffusion, denoising, autoencoders, score function, deep learning, genera
 
 image:
   feature: diffuse.jpg
-comments: false
+comments: true
 share: true
 ---
 

@@ -5,7 +5,7 @@ description: "An overview of what I've been doing as part of my internship at Sp
 tags: [deep learning, convolutional neural networks, convnets, Theano, convolution, MIR, music information retrieval, music recommendation, Spotify, internship, music, collaborative filtering, cold start problem]
 image:
   feature: albumsbg.jpg
-comments: false
+comments: true
 share: true
 ---
 

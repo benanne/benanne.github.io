@@ -8,7 +8,7 @@ tags: [deep learning, convolutional neural networks, convnets, Theano, Kaggle, G
 
 image:
   feature: galaxybg.jpg
-comments: false
+comments: true
 share: true
 ---
 
