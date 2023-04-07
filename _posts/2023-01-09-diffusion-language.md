@@ -113,6 +113,8 @@ All in all, I have become convinced that the key to powerful generative models i
 
 *On an unrelated note: I've disabled Disqus comments on all of my blog posts, as their ads seem to have gotten very spammy. I don't have a good alternative to hand right now, so in the meantime, feel free to tweet your thoughts at me instead [@sedielem](https://twitter.com/sedielem), or send me an email. When I eventually revamp this blog at some point in the future, I will look into re-enabling comments. Apologies for the inconvenience!*
 
+*UPDATE (April 7): I have reenabled Disqus comments.*
+
 *If you would like to cite this post in an academic context, you can use this BibTeX snippet:*
 
 ```
