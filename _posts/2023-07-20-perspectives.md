@@ -37,7 +37,7 @@ Alright, here goes (click to scroll to each section):
 7. *[Diffusion models are **autoregressive models**](#autoregressive)*
 8. *[Diffusion models estimate **expectations**](#expectation)*
 9. *[Discrete and continuous diffusion models](#discrete-continuous)*
-10. *[Ad-hoc formulations](#ad-hoc)*
+10. *[Alternative formulations](#alternative)*
 11. *[Consistency](#consistency)*
 12. *[Defying conventions](#conventions)*
 13. *[Closing thoughts](#closing-thoughts)*
@@ -276,7 +276,7 @@ All four combinations of discreteness/continuity exist:
 * **discrete time, discrete input**: D3PM[^d3pm], MaskGIT[^maskgit], Mask-predict[^maskpredict], ARDM[^ardm], Multinomial diffusion[^multinomial] and SUNDAE[^sundae] are all methods that use iterative refinement on discrete inputs -- whether all of these should be considered diffusion models isn't entirely clear (it depends on who you ask);
 * **continuous time, discrete input**: Continuous Time Markov Chains (CTMCs)[^ctmc], Score-based Continuous-time Discrete Diffusion Models[^discretescore] and Blackout Diffusion[^blackout] all pair discrete input with continuous time -- this setting is also often handled by embedding discrete data in Euclidean space, and then performing input-continuous diffusion in that space, as in e.g. Analog Bits[^selfcond], Self-conditioned Embedding Diffusion[^sed] and CDCD[^cdcd].
 
-## <a name="ad-hoc"></a> Ad-hoc formulations
+## <a name="alternative"></a> Alternative formulations
 
 <figure>
   <a href="/images/adhoc.jpg"><img src="/images/adhoc.jpg"></a>
