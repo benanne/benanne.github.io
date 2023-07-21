@@ -93,6 +93,7 @@ Full disclosure: out of all the different perspectives on diffusion in this blog
 * ["Diffusion Models as a kind of VAE" by Angus Turner](https://angusturner.github.io/generative_models/2021/06/29/diffusion-probabilistic-models-I.html)
 * [Jakub Tomczak's blog post on DDPMs](https://jmtomczak.github.io/blog/10/10_ddgms_lvm_p2.html)
 * [Lilian Weng's blog post on diffusion models (connects multiple perspectives)](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
+* [Alex Alemi's blog post about the variational diffusion loss](https://blog.alexalemi.com/diffusion.html)
 
 
 ## <a name="score"></a> Diffusion models predict the score function
@@ -348,7 +349,7 @@ What's your favourite perspective on diffusion? Are there any useful perspective
 
 ## <a name="acknowledgements"></a> Acknowledgements
 
-Thanks to my colleagues at Google DeepMind for various discussions, which continue to shape my thoughts on this topic!
+Thanks to my colleagues at Google DeepMind for various discussions, which continue to shape my thoughts on this topic! Thanks to Ayan Das, Ira Korshunova, and Peyman Milanfar for suggestions and corrections.
 
 ## <a name="references"></a> References
 
