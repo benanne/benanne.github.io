@@ -226,7 +226,7 @@ One question this perspective raises is whether diffusion models might actually 
   <a href="/images/arguidance.jpg"><img src="/images/arguidance.jpg"></a>
 </figure>
 
-For diffusion models of natural images, **the sampling process tends to produce large-scale structure first, and then iteratively adds more and more fine-grained details**. Indeed, there seems to be almost a direct correspondence between noise levels an feature scales, which I discussed in more detail in Section 5 of [a previous blog post](https://sander.ai/2022/01/31/diffusion.html#scale).
+For diffusion models of natural images, **the sampling process tends to produce large-scale structure first, and then iteratively adds more and more fine-grained details**. Indeed, there seems to be almost a direct correspondence between noise levels and feature scales, which I discussed in more detail in Section 5 of [a previous blog post](https://sander.ai/2022/01/31/diffusion.html#scale).
 
 But why is this the case? To understand this, it helps to think in terms of spatial frequencies. Large-scale features in images correspond to low spatial frequencies, whereas fine-grained details correspond to high frequencies. We can decompose images into their spatial frequency components using the 2D Fourier transform (or some variant of it). This is often the first step in image compression algorithms, because the human visual system is known to be much less sensitive to high frequencies, and this can be exploited by compressing them more aggressively than low frequencies.
 
@@ -349,7 +349,7 @@ What's your favourite perspective on diffusion? Are there any useful perspective
 
 ## <a name="acknowledgements"></a> Acknowledgements
 
-Thanks to my colleagues at Google DeepMind for various discussions, which continue to shape my thoughts on this topic! Thanks to Ayan Das, Ira Korshunova, and Peyman Milanfar for suggestions and corrections.
+Thanks to my colleagues at Google DeepMind for various discussions, which continue to shape my thoughts on this topic! Thanks to Ayan Das, Ira Korshunova, Peyman Milanfar, and Çağlar Ünlü for suggestions and corrections.
 
 ## <a name="references"></a> References
 
