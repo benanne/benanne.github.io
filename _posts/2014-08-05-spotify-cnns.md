@@ -140,22 +140,22 @@ All of the Spotify playlists below should have 10 tracks. Some of them may not b
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 14: vibrato singing</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:3KcOA1o1Q1E7AKJp6lRKOG" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3KcOA1o1Q1E7AKJp6lRKOG?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 242: ambience</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:4XSo1qV9vGNwM7uz8LYwDR" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4XSo1qV9vGNwM7uz8LYwDR?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 250: vocal thirds</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:2CRSJ4h9cWvDSwNoqh9UJC" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2CRSJ4h9cWvDSwNoqh9UJC?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 253: bass drums</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:121nUXz11tA96ONF4Dk2Eh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/121nUXz11tA96ONF4Dk2Eh?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="clear: both;"></div>
@@ -179,22 +179,22 @@ The next four playlists were obtained in a slightly different way: I computed th
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 1: noise, distortion</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:0vRgR1RreMyOyZAnfF5Qzr" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0vRgR1RreMyOyZAnfF5Qzr?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 2: pitch (A, Bb)</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:38jOUhgqrT9Fw4xcFxnTCf" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/38jOUhgqrT9Fw4xcFxnTCf?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 4: drones</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:2wYoHEQ082aw3sI4CWqwsi" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2wYoHEQ082aw3sI4CWqwsi?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 28: chord (A, Am)</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:2s1TOuZb5lGoa30BFucE5K" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2s1TOuZb5lGoa30BFucE5K?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="clear: both;"></div>
@@ -223,32 +223,32 @@ Each layer in the network takes the feature representation from the layer below,
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 3: christian rock</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:48cTKQ3ubm8osDVyrML9p9" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/48cTKQ3ubm8osDVyrML9p9?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 15: choirs / a cappella + smooth jazz</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:7tQShxnjMycjb0NsQJuU8f" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7tQShxnjMycjb0NsQJuU8f?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 26: gospel</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:4ZRJs9g1GzqVRE6wh1YNdT" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4ZRJs9g1GzqVRE6wh1YNdT?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 37: Chinese pop</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:25GNJ9ygtFxt1j3jWwdoYv" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/25GNJ9ygtFxt1j3jWwdoYv?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 49: chiptune, 8-bit</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:0jSEMRLNNNVvOkPHuDUAYM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0jSEMRLNNNVvOkPHuDUAYM?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center;">Filter 1024: deep house</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:3cS6tiQOpW0eXsyAlxcrqO" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3cS6tiQOpW0eXsyAlxcrqO?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="clear: both;"></div>
@@ -267,34 +267,32 @@ Predicted latent factor vectors can be used to find songs that sound similar. Be
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center; width: 290px; height: 50px;">The Notorious B.I.G. - Juicy (hip hop)</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:6wnPsncVsmApMRj5g7PWkz" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6wnPsncVsmApMRj5g7PWkz?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center; width: 290px; height: 50px;">Cloudkicker - He would be riding on the subway... (post-rock, post-metal)</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:6K9Df3nXsZVftKmYliUcIS" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6K9Df3nXsZVftKmYliUcIS?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center; width: 290px; height: 50px;">Architects - Numbers Count For Nothing (metalcore, hardcore)</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:5bAhiBYDlsCkr2BzKKIS1b" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5bAhiBYDlsCkr2BzKKIS1b?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center; width: 290px; height: 50px;">Neophyte - Army of Hardcore (hardcore techno, gabber)</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:3lwuKlfrqnqxaYKF10KOT4" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3lwuKlfrqnqxaYKF10KOT4?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
-
-<div style="clear: both;"></div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center; width: 290px; height: 50px;">Fleet Foxes - Sun It Rises (indie folk)</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:0aFDjurTiPd3VO8RO8T6uz" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0aFDjurTiPd3VO8RO8T6uz?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="float: left; margin: .5em;">
 <figcaption style="text-align: center; width: 290px; height: 50px;">John Coltrane - My Favorite Things (jazz)</figcaption>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:sander_dieleman:playlist:66rHmJlejT0PQh74JXV8Ie" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/66rHmJlejT0PQh74JXV8Ie?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
 <div style="clear: both;"></div>
