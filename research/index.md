@@ -5,10 +5,18 @@ tags: [research]
 image:
   feature: 12.jpg
 comments: false
-modified: 2022-12-24
+modified: 2024-06-14
 ---
 
-My main research interests are in generative modelling and representation learning, with a focus on audio signals and music. I have also worked on music recommendation and image classification in the past. Selected papers are listed below, please refer to Google Scholar for [a complete list of my publications](http://scholar.google.com/citations?user=2ZU62T4AAAAJ).
+My main research interests are in generative modelling and representation learning of media, including audio/music, images and video, and diffusion models in particular. I have also worked on music recommendation and image classification in the past. Selected papers and projects are listed below, please refer to Google Scholar for [a complete list of my publications](https://scholar.google.com/citations?user=yNNIKJsAAAAJ).
+
+### Generative models of media at Google DeepMind
+
+I have contributed to several generative models of media at [Google DeepMind](https://deepmind.google/), including:
+* [Lyria](https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/), a music generation model
+* [Imagen 2](https://deepmind.google/technologies/imagen-2/) and [Imagen 3](https://deepmind.google/technologies/imagen-3/), image generation models
+* [Veo](https://deepmind.google/technologies/veo/), a video generation model
+
 
 ### Continuous diffusion for categorical data
 
