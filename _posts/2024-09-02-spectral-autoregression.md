@@ -169,7 +169,7 @@ The animation below shows how the spectrum changes as we gradually add more nois
 
 With this in mind, it becomes apparent that the corruption process used in diffusion models is actually gradually filtering out more and more high-frequency information from the input image, and the different time steps of the process correspond to a frequency decomposition: basically an approximate version of the **Fourier transform**!
 
-Since diffusion models themselves are tasked with reversing this corruption process step-by-step, they end up roughly predicting the next higher frequency component at each step of the generative process, given all preceding (lower) frequency components. This is a soft version of **autoregression in frequency space**, or if you want to make it sound fancier, **appproximate spectral autoregression**.
+Since diffusion models themselves are tasked with reversing this corruption process step-by-step, they end up roughly predicting the next higher frequency component at each step of the generative process, given all preceding (lower) frequency components. This is a soft version of **autoregression in frequency space**, or if you want to make it sound fancier, **approximate spectral autoregression**.
 
 To the best of my knowledge, [Rissanen et al. (2022)](https://arxiv.org/abs/2206.13397)[^heat] were the first to apply this kind of analysis to diffusion in the context of generative modelling (see §2.2 in the paper). Their work directly inspired this blog post.
 
