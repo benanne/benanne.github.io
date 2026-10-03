@@ -1,10 +1,10 @@
 # Menu navigation links
 
+- title: Media
+  url: /media
+
 - title: Research
   url: /research
 
 - title: Software
   url: /software
-
-- title: DeepMind
-  url: https://deepmind.com/
