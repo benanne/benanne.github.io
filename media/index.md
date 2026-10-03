@@ -12,7 +12,7 @@ I occasionally give talks and interviews. This page is an attempt to collect the
 
 Those that are available on YouTube are also collected in a [playlist](https://www.youtube.com/playlist?list=PLhlWs3d7Sk1_XOBfyAvc9VO9aN5iFL4hw).
 
-Slideslive also has an [overview page](https://slideslive.com/s/sander-dieleman-24923?page=1&sort=name_asc&tab=presentations) of all the content I've contributed to conferences where they were in charge of recording and streaming, including ICLR, ICML and NeurIPS.
+Slideslive has an [overview page](https://slideslive.com/s/sander-dieleman-24923?page=1&sort=name_asc&tab=presentations) of all the content I've contributed to conferences where they were in charge of recording and streaming, including ICLR, ICML and NeurIPS.
 
 ## Interviews and podcasts
 
@@ -27,7 +27,7 @@ An interview hosted by my friend and former colleague Marta Garnelo. There is an
 
 ### History of Diffusion (May 2025)
 
-An interview hosted by Slater Stich of [Bain Capital Ventures](https://baincapitalventures.com/), part of a series of three interviews on the history of diffusion models. The other interviews are with Jascha Sohl-Dickstein and Yang Song, who actually invented this stuff (all I do is blog about it), so I recommend checking them out as well.
+An interview hosted by Slater Stich of [Bain Capital Ventures](https://baincapitalventures.com/), part of a series of three interviews on the history of diffusion models. The other interviews are with [Jascha Sohl-Dickstein](https://www.youtube.com/watch?v=VpYNlHIHT7o) and [Yang Song](https://www.youtube.com/watch?v=ud6z5SkjoZI), who actually invented this stuff (all I do is blog about it), so I recommend checking them out as well.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ktPGNhe11cQ?si=qXlQKflJE3VK92Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -66,7 +66,7 @@ At [ML in PL](https://conference2025.mlinpl.org/) in Warsaw, Poland (October 202
 
 ### Summer school lectures on diffusion models
 
-I've also given several lectures on diffusion models at summer schools. These are very similar to each other (with some updates in the more recent editions). Like most of my materials, the focus is squarely on building intuition, but these lectures skew a bit more academic.
+I've given several lectures on diffusion models at summer schools. These are very similar to each other (with some updates in the more recent editions). Like most of my materials, the focus is squarely on building intuition, but these lectures skew a bit more academic.
 
 At The [Eastern European Machine Learning Summer School](https://www.eeml.eu/) in Cetinje, Montenegro (July 2026), note that this is a video covering the entire first day of the summer school, my lecture starts at approximately 6:14:00 into the video:
 
